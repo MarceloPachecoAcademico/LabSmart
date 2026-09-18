@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROTOTECH</title>
+</head>
+<body style="display: flex; flex-wrap: wrap;margin: 0;padding: 0;">
+    
+        <nav class="menu-lateral" style="height: 100vh; position: fixed; margin-right: 50px; width: 180px;  ">
+            <div class="logo" style="padding: 15px;">
+                <a href="index.html"><img src="img/logo.png" height="60px" width="60px" alt="Logo" ></a>
+            </div>
+            <ul style="list-style-type: none; display: flex; flex-direction: column; gap: 15px; text-decoration: none;margin-left: 10px;padding: 0;">
+                <li style="background-color: rgb(101, 128, 202); padding: 5px; border-radius: 8px; ">
+                    <a href="" style="text-decoration: none;color: white;">Dashboard</a>
+                </li>
+                <li>
+                    <a href="" style="text-decoration: none; color: black;">Clientes</a>
+                </li>
+                <li>
+                    <a href="" style="text-decoration: none;color: black;">Pedidos</a>
+                </li>
+                <li>
+                    <a href="" style="text-decoration: none;color: black;">Aparelhos</a>
+                </li>
+                <li>
+                    <a href="" style="text-decoration: none;color: black;">Financeiro</a>
+                </li>
+                <li>
+                    <a href="" style="text-decoration: none;color: black;">Relatórios</a>
+                </li>
+                <li>
+                    <a href="" style="text-decoration: none;color: black;">Serviços</a>
+                </li>
+                <li>
+                    <a href="" style="text-decoration: none;color: black;">Usuários </a>
+                </li>
+                <li>
+                    <a href="" style="text-decoration: none;color: black;">Configurações</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="head" style="display: flex; width: 85%; height: 80px; justify-content: space-between; align-items: center;
+         margin-left: 200px;padding: 10px; background-color: #deecfa;">
+            <div class="menu-hamburguer" >
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"><path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
+                </svg>
+            </div>
+            <div class="funcoes" style="display: flex;gap: 10px; justify-content: space-between; align-items: center;" >
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 30 30">
+                    <path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z">
+                    </path>
+                </svg>
+                <input type="search" name="buscar" id="" placeholder="Pesquisar" style="border-radius: 10px; padding: 5px; border: none;">
+                <img width="30" height="30" src="https://img.icons8.com/ios/50/alarm--v1.png" alt="alarm--v1"/>
+                <img width="30" height="30" src="https://img.icons8.com/fluency-systems-regular/48/exit--v1.png" alt="exit--v1"/>
+            </div>
+        </nav>
+    
+ 
+    <main style="display: flex; padding: 20px; height: 100vh; width: 100%;  margin-left: 200px; background-color: #F4F9FE; flex-direction: column;">
+        <div>
+            <div>
+                <img src="img/novoDoc.png" alt="novo pedido" style="width: 100px; height: 100px;" align="left" >
+                <h3>Novo Pedido</h3>
+                <h4>Preencha os dados para registrar um novo pedido.</h4>
+            </div>
+            <div>
+                <form action="index.html" method="get">
+                    <table style="background-color: #deecfa; padding: 5px; border-radius: 10px; padding: 5px; width: 30%; ">
+                        <br>
+                        <tr>
+                            <td>
+                                <small>Cliente</small><br>
+                            </td>                          
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" size="60" placeholder="Nome do cliente" required><br>
+                            </td>                          
+                        </tr>
+                        <tr>
+                            <td>
+                                <small>Data</small><br>
+                            </td>                          
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="date" placeholder="Data" required><br>
+                            </td>                          
+                        </tr>
+                        <tr>
+                            <td>
+                                <small>Valor</small><br>
+                            </td>                          
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" size="60" placeholder="Valor" required><br>
+                            </td>                          
+                        </tr>
+                        <tr>
+                            <td>
+                                <small>Status</small><br>
+                            </td>                          
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" size="60" placeholder="Status do pedido" required><br>
+                            </td>                          
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="text-align: center; position: inherit; margin-top: auto;">
+                                    <input type="submit" value="Salvar">
+                                    <input type="reset" value="Limpar">
+                                </div>
+                            </td>                          
+                        </tr>                        
+                        
+                        
+                        
+                        
+                    </table>
+                    
+                    
+                </form>
+                <form action="index.html" method="get">
+                    <input type="submit" value="Cancelar">
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
