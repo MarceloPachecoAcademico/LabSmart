@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROTOTECH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="display: flex; flex-wrap: wrap;margin: 0;padding: 0;">
+    
+        <nav class="menu-lateral" style="height: 100vh; position: fixed; margin-right: 50px; width: 180px;  ">
+            <div class="logo" style="padding: ;">
+                <a href="index.html"><img src="img/Logoofc.png" height="100px" width="110px" alt="Logo" ></a>
+            </div>
+            <ul style="list-style-type: none; display: flex; flex-direction: column; gap: 15px; text-decoration: none;margin-left: 10px;padding: 0;">
+                <li style="background-color: rgb(101, 128, 202); padding: 5px; border-radius: 8px; ">
+                    <a href="" style="text-decoration: none;color: white;">Dashboard</a>
+                </li>
+                <li>
+                    <a href="" style="text-decoration: none; color: black;">Clientes</a>
+                </li>
+                <li>
+                    <a href="" style="text-decoration: none;color: black;">Pedidos</a>
+                </li>
+                <li>
+                    <a href="" style="text-decoration: none;color: black;">Aparelhos</a>
+                </li>
+                <li>
+                    <a href="" style="text-decoration: none;color: black;">Financeiro</a>
+                </li>
+                <li>
+                    <a href="" style="text-decoration: none;color: black;">Relatórios</a>
+                </li>
+                <li>
+                    <a href="home.html" target="_blank" style="text-decoration: none;color: black;">Serviços</a>
+                </li>
+                <li>
+                    <a href="" style="text-decoration: none;color: black;">Usuários </a>
+                </li>
+                <li>
+                    <a href="" style="text-decoration: none;color: black;">Configurações</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="head" style="display: flex; width: 85%; height: 80px; justify-content: space-between; align-items: center;
+         margin-left: 200px;padding: 10px; background-color: #deecfa;">
+            <div class="menu-hamburguer" >
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"><path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
+                </svg>
+            </div>
+            <div class="funcoes" style="display: flex;gap: 10px; justify-content: space-between; align-items: center;" >
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 30 30">
+                    <path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z">
+                    </path>
+                </svg>
+                <input type="search" name="buscar" id="" placeholder="Pesquisar" style="border-radius: 10px; padding: 5px; border: none;">
+                <img width="30" height="30" src="https://img.icons8.com/ios/50/alarm--v1.png" alt="alarm--v1"/>
+                <img width="30" height="30" src="https://img.icons8.com/fluency-systems-regular/48/exit--v1.png" alt="exit--v1"/>
+            </div>
+        </nav>
+    
+
+       <main style="display: flex; padding: 20px; height: 100vh; width: 100%;  margin-left: 200px; background-color: #F4F9FE; flex-direction: column;">
+        <div class="msg" style="display: flex; flex-direction: column; padding: 20px;">
+            <h3>Olá, administrador!</h3>
+                <span>Bem vindo ao sistema inteligente para laboratórios!</span>
+            </div>
+            <div class="tabelas" style="display: flex; width: 80%; gap: 30px;">
+                <div class="pedidos-recentes" >
+                
+                <table style="background-color: #deecfa; padding: 5px; border-radius: 10px; padding: 5px;width: 40%; ">
+                    <tr>
+                        <th colspan="6" style="font-size: 20px; text-align: left; color: rgb(9, 9, 43);">
+                            Pedidos recentes
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th style="width: 20%; text-align: center;">N° do pedido</th>
+                        <th style="width: 20%; text-align: center;">Serviço</th>
+                        <th style="width: 20%; text-align: center;">Cliente</th>
+                        <th style="width: 20%; text-align: center;">Data</th>
+                        <th style="width: 20%; text-align: center;">Valor</th>
+                        <th style="width: 20%; text-align: center;">Status</th>
+                    </tr>
+
+                    <tr style="height: 30px;">
+                        <td style="width: 20%;text-align: center;">12341</td>
+                        <td style="width: 20%; text-align: center;">Hawley</td>
+                        <td style="width: 20%; text-align: center;">Sorridents</td>
+                        <td style="width: 20%; text-align: center;">25/05/25</td>
+                        <td style="width: 20%; text-align: center;">R$ 95,00</td>
+                        <td style="width: 20%; text-align: center; background-color: rgba(28, 184, 8, 0.664); border-radius: 10px;">Aberto</td>
+                    </tr>
+
+                    <tr style="height: 30px;">
+                        <td style="width: 20%; text-align: center;">12342</td>
+                        <td style="width: 20%; text-align: center;">Macnamara</td>
+                        <td style="width: 20%; text-align: center;">OdontoCompany</td>
+                        <td style="width: 20%; text-align: center;">02/03/25</td>
+                        <td style="width: 20%; text-align: center;">R$260,00</td>
+                        <td style="width: 20%; text-align: center;  background-color: rgba(184, 20, 8, 0.664); border-radius: 10px;padding: 5px;">Finalizado</td>
+                    </tr>
+
+                    <tr style="height: 30px;">
+                        <td style="width: 20%;  text-align: center;">12343</td>
+                        <td style="width: 20%; text-align: center;">Contenção higiênica</td>
+                        <td style="width: 20%; text-align: center;">OdontoCompany</td>
+                        <td style="width: 20%; text-align: center;">17/03/25</td>
+                        <td style="width: 20%; text-align: center;">R$40,00</td>
+                        <td style="width: 20%; text-align: center;  background-color: rgba(28, 184, 8, 0.664); border-radius: 10px;">Aberto</td>
+                    </tr>
+                </table>
+          
+            </div>
+            <div class="clientes">
+                    <table style="background-color: #deecfa; padding: 5px; border-radius: 10px; padding: 5px; width: 40%; ">
+                    <tr>
+                        <th colspan="6" style="font-size: 20px; text-align: left; color: rgb(9, 9, 43);">
+                            Clientes
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th style="width: 20%; text-align: center;">Nome</th>
+                        <th style="width: 20%; text-align: center;">Clínica</th>
+                        <th style="width: 20%; text-align: center;">Telefone</th>
+                        <th style="width: 20%; text-align: center;">E-mail</th>
+                        <th style="width: 20%; text-align: center;">Ações</th>
+                    </tr>
+
+                    <tr style="height: 30px;">
+                        <td style="width: 20%;text-align: center;">Andreia Pereira</td>
+                        <td style="width: 20%; text-align: center;">OdontoCompany</td>
+                        <td style="width: 20%; text-align: center;">(11)96583-8873</td>
+                        <td style="width: 20%; text-align: center;">andrreia@gmail.com</td>
+                      
+                    </tr>
+
+                    <tr style="height: 30px;">
+                        <td style="width: 20%; text-align: center;">Patricia Vasconscelos</td>
+                        <td style="width: 20%; text-align: center;">Sorridents</td>
+                        <td style="width: 20%; text-align: center;">(11)962457234</td>
+                        <td style="width: 20%; text-align: center;">patricia@gmail.com</td>
+                        
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
